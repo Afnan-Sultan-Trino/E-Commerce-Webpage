@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Handlee&family=Italianno&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mooli&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav_list">
+          <a href="E-Commerce.html" class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+          <a href="register.html" class="nav_link">Register</a>
+        </li>
+        <li class="nav_list">
+          <a href="login.html" class="nav_link">Login</a>
+        </li>
+        <li class="nav_list">
+          <a href="E-Commerce.html" class="nav_link">Logout</a>
+        </li>
+        <li class="nav_list">
+          <a href="contact.html" class="nav_link">Contact</a>
+        </li>
+        <li class="nav_list">
+          <a href="profile.html" class="nav_link">
+            <img
+              class="profile-icon"
+              src="received_980243623584720.jpeg"
+              alt="profile icon"
+            />
+          </a>
+        </li>
+      </ul>
+      <ul class="nav-lower flex-space-around">
+        <li class="nav_list">
+          <a href="E-Commerce.html" class="nav_brand nav_link">
+            <span><i class="fa-solid fa-leaf icon-leaf"></i></span>
+            Sobuj Pata Express</a
+          >
+        </li>
+        <li class="nav_list">
+          <a href="cart.html" class="nav_link">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            Cart 2 products-124.40TK
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- navbar ends here -->
+
+    <!-- header starts here -->
+    <header class="header">
+      <div class="banner flex-space-around">
+        <marquee class="banner_title" behavior=""
+          >50% Sales going on.<br />
+          Don't miss this offer!
+        </marquee>
+        <div class="features flex-space-around">
+          <article class="feature flex-center">
+            <i class="fa-solid fa-truck feature_icon"></i>
+            <h3>Shipping within 7 days</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-brands fa-rocketchat feature_icon"></i>
+            <h3>Support 24/7</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-regular fa-credit-card feature_icon"></i>
+            <h3>Safe & Secure Payment</h3>
+          </article>
+        </div>
+      </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- main starts here -->
+
+    <main class="flex-center">
+      <div class="sidebar">
+        <section class="categories-section">
+          <h3 class="section-title">Catagories</h3>
+          <ul class="list">
+            <li class="list_item">
+              <label for="Shoes">
+                <input type="checkbox"name="Shoes"id="Shoes"value="Shoes">Shoes
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="Headphones">
+                <input type="checkbox"name="Headphones"id="Headphones"value="Headphones">Headphones
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="Wrist watch">
+                <input type="checkbox"name="Wrist watch"id="Wrist watch"value="Wrist watch">Wrist Watch
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="Bags">
+                <input type="checkbox"name="Bags"id="Bags"value="Bags">Bags
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="tablet">
+                <input type="checkbox"name="tablet"id="tablet"value="tablet">Tablet
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="Perfume">
+                <input type="checkbox"name="Perfume"id="Perfume"value="Perfume">Perfume
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="Sunglass">
+                <input type="checkbox"name="Sunglass"id="Sunglass"value="Sunglass">Sunglass
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="price-section">
+          <h3 class="section-title">Price Range</h3>
+          <ul class="list">
+            <li class="list_item">
+              <label for="price1">
+                <input type="radio"name="price"id="price1"value="[250,300]">250TK-300TK
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="price2">
+                <input type="radio"name="price"id="price1"value="[300,400]">300TK-400TK
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="price3">
+                <input type="radio"name="price"id="price1"value="[400,500]">400TK-500TK
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="price4">
+                <input type="radio"name="price"id="price1"value="[500-700]">500TK-700TK
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="price5">
+                <input type="radio"name="price"id="price1"value="[1000+]">Above 1000TK
+              </label>
+              <li class="list_item">
+                <label for="price6">
+                  <input type="radio"name="price"id="price1"value="[5000+]">Above 5000TK
+                </label>
+              </li>
+            </li>
+          </ul>
+        </section>
+        <section class="shipping-section">
+          <h3 class="section-title">Shipping Options</h3>
+          <ul class="list">
+            <li class="list_item">
+              <label for="free">
+                <input type="radio"name="shipping"id="free"value="free">Free 
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="paid">
+                <input type="radio"name="shipping"id="paid"value="paid">Paid 
+              </label>
+            </li>
+            </ul>
+            </section>
+      </div>
+
+
+      <div class="main-content">
+        <section class="actions flex-space-around">
+          <div class="actions_sort">
+            <label for="sort">Sort By: </label>
+            <select name="sort"id="sort">
+              <option value="sold">Most sold first</option>
+              <option value="rating">Most rated first</option>
+              <option value="price">Cheapest first</option>
+              <option value="arrival">Newly arrival first</option>
+              <option value="discount">Biggest discount first</option>
+            </select>
+          </div>
+          <div class="actions_search">
+            <input type="text"placeholder="Search product">
+            <button class="btn">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+        </section>
+
+
+        <!-- product section starts here -->
+         <section class="products">
+          <article class="product card">
+            <div class="badge">
+              <span>5 in stock</span>
+              <hr class="hr-design">
+              <span>3 in sold</span>
+            </div>
+            <img src="paul-gaudriault-a-QH9MAAVNI-unsplash.jpg"class="product_img"alt="product1">
+            <div class="product_body">
+              <h3 class="product_name">Chuck 70 Converse Sneakers</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product_description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Est ullam maiores earum fugiat temporibus repellendus exercitationem 
+                 molestias commodi animi perspiciatis perferendis facere minima reiciendis 
+                 veritatis vero non ducimus, reprehenderit dolorem?....<a href="product.html"class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product_price">1299.99TK</h4>
+              <p class="product_rating">Rating: 4.5/5</p>
+              <button class="btn product_button">Add To Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span>8 in stock</span>
+              <hr class="hr-design">
+              <span>4 in sold</span>
+            </div>
+            <img src="c-d-x-PvIz8BmuwDw-unsplash.jpg"class="product_img"alt="product1">
+            <div class="product_body">
+              <h3 class="product_name">H30s Bluetooth Wireless Headphones</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product_description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Est ullam maiores earum fugiat temporibus repellendus exercitationem 
+                 molestias commodi animi perspiciatis perferendis facere minima reiciendis 
+                 veritatis vero non ducimus, reprehenderit dolorem?....<a href="product.html"class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product_price">1699.99TK</h4>
+              <p class="product_rating">Rating: 4.3/5</p>
+              <button class="btn product_button">Add To Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span>6 in stock</span>
+              <hr class="hr-design">
+              <span>2 in sold</span>
+            </div>
+            <img src="laura-chouette-2B-zwo_nq7k-unsplash.jpg"class="product_img"alt="product1">
+            <div class="product_body">
+              <h3 class="product_name">GG Marmont Small Shoulder Bag</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product_description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Est ullam maiores earum fugiat temporibus repellendus exercitationem 
+                 molestias commodi animi perspiciatis perferendis facere minima reiciendis 
+                 veritatis vero non ducimus, reprehenderit dolorem?....<a href="product.html"class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product_price">2695TK</h4>
+              <p class="product_rating">Rating: 4.7/5</p>
+              <button class="btn product_button">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>9 in stock</span>
+              <hr class="hr-design">
+              <span>5 in sold</span>
+            </div>
+            <img src="giorgio-trovato-K62u25Jk6vo-unsplash.jpg"class="product_img"alt="product1">
+            <div class="product_body">
+              <h3 class="product_name">Wafare Sunglass for Men</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product_description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Est ullam maiores earum fugiat temporibus repellendus exercitationem 
+                 molestias commodi animi perspiciatis perferendis facere minima reiciendis 
+                 veritatis vero non ducimus, reprehenderit dolorem?....<a href="product.html"class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product_price">1150TK</h4>
+              <p class="product_rating">Rating: 4.2/5</p>
+              <button class="btn product_button">Add To Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span>12 in stock</span>
+              <hr class="hr-design">
+              <span>9 in sold</span>
+            </div>
+            <img src="laura-chouette-sjzg6LZCOXI-unsplash.jpg"class="product_img"alt="product1">
+            <div class="product_body">
+              <h3 class="product_name">Gucci Guilty Pour EDT(150mL)</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product_description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Est ullam maiores earum fugiat temporibus repellendus exercitationem 
+                 molestias commodi animi perspiciatis perferendis facere minima reiciendis 
+                 veritatis vero non ducimus, reprehenderit dolorem?....<a href="product.html"class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product_price">12699.99TK</h4>
+              <p class="product_rating">Rating: 4.8/5</p>
+              <button class="btn product_button">Add To Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span>10 in stock</span>
+              <hr class="hr-design">
+              <span>9 in sold</span>
+            </div>
+            <img src="pat-taylor-12V36G17IbQ-unsplash.jpg"class="product_img"alt="product1">
+            <div class="product_body">
+              <h3 class="product_name">Naviforce 9216L Brown</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product_description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Est ullam maiores earum fugiat temporibus repellendus exercitationem 
+                 molestias commodi animi perspiciatis perferendis facere minima reiciendis 
+                 veritatis vero non ducimus, reprehenderit dolorem?....<a href="product.html"class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product_price">2399.99TK</h4>
+              <p class="product_rating">Rating: 4.4/5</p>
+              <button class="btn product_button">Add To Cart</button>
+            </div>
+          </article>
+
+
+         </section>
+
+         <div class="pagination">
+          <button class="btn pagination_btn">
+           <i class="fas fa-less-than"></i>
+          </button>
+          <button class="btn pagination_btn">2</button>
+          <button class="btn pagination_btn">3</button>
+          <button class="btn pagination_btn">4</button>
+          <button class="btn pagination_btn">5</button>
+          <button class="btn pagination_btn">6</button>
+          <button class="btn pagination_btn">7</button>
+          <button class="btn pagination_btn">8</button>
+          <button class="btn pagination_btn">9</button>
+          <button class="btn pagination_btn">10</button>
+          <button class="btn pagination_btn">...</button>
+          <button class="btn pagination_btn">30</button>
+          <button class="btn pagination_btn">
+            <i class="fas fa-greater-than"></i>
+           </button>
+         
+         </div>
+
+
+         <!-- product section ends here -->
+
+
+      </div>
+    </main>
+
+    <!-- footer starts here -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter :</label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          class="footer_input"
+          placeholder="Your Email Address"
+        />
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>&copy;Copyright 2024. All rights reserved. Sobuj Pata Express.</div>
+    </footer>
+
+    <!-- footer ends here -->
+    <script src="index.js"></script>
+  </body>
+</html>
